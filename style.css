@@ -15,12 +15,13 @@
 }
 .ribbon_btn {
   border: 0.5px solid #000000;
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   text-align: center;
-  line-height: 30px;
+  line-height: 40px;
   cursor: pointer;
   background-color: #ffffff;
+  font-size: larger;
 }
 .ribbon_btn:hover {
   background-color: rgba(238, 238, 238, 0.904);
