@@ -1,90 +1,30 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 Not Found</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <style>
-        #error-404 {
-            height: 100%;
-            ;
-            width: 100%;
-            top: 0;
-            left: 0;
-            overflow: auto;
-        }
-
-        h1 {
-            color: #000000;
-            font-size: 70px;
-        }
-
-        #error-line {
-            font-size: larger;
-        }
-
-        body {
-            margin-top: 0px;
-            font-family: 'Calibri';
-        }
-
-        .homepage {
-            font-size: larger;
-            text-align: right;
-            text-decoration: none;
-            float: right;
-            margin-top: 0px;
-        }
-
-        .heading {
-            display: flex;
-            justify-content: space-between;
-            line-height: 85px;
-            height: 85px;
-        }
-
-        .error {
-            color: #000000;
-            font-size: 70px;
-        }
-
-        .heading-404 {
-            display: flex;
-            justify-content: space-between;
-        }
-    </style>
+    <link rel="stylesheet" href="/static/css/tailwind.css">
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div id="error-404">
-            <div class="heading-404">
-                <h2>404 Not Found</h2> <span class="homepage"><a href="/" class="homepage">Home</a></span>
+    <div class="select-none">
+        <div class="bg-blue-100 px-7 py-16 ">
+            <div class="text-3xl font-bold sm:text-5xl lg:6xl">
+                <span>404.</span>
+                <span>Not Found</span>
             </div>
-            <p id='error-line'>The requested URL <strong id="path"></strong> was not found on this server. </p>
+        </div>
+        <div class="py-5 px-3 sm:text-2xl  text-red-800">
+            <p>
+                <span class="font-bold">Error:</span> The requested resource was not found on this server. Please make
+                sure that you have entered the correct
+                URL.
+            </p>
         </div>
     </div>
-    <script>
-        var pathname = window.location.pathname
-        document.getElementById("path").innerHTML = pathname;
-    </script>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>
